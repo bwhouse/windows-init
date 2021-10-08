@@ -26,9 +26,14 @@ install-package -package iperf3
 Install-Module posh-git
 Install-Module oh-my-posh
 
+# Install modified omp theme
+Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/bwhouse/windows-init/main/.craver_mod.omp.json' -OutFile $env:USERPROFILE\.craver_mod.omp.json
+
 # Install profiles
 Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/bwhouse/windows-init/main/Microsoft.PowerShell_profile.ps1' -OutFile $PROFILE
 Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/bwhouse/windows-init/main/settings.json' -OutFile $env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
+
+
 
 # Install console background
 Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/bwhouse/windows-init/main/console_wallpaper.png' -OutFile $env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\console_wallpaper.png
