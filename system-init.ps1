@@ -17,7 +17,7 @@ Install-Chocolatey
 
 Install-Package -package openssh -params --version=8.6.0-beta1 #install newer version of SSH loads by defaults to ensure scrolling works in TMUX 
 install-package -package gsudo
-install-package -package cascadiacodepl
+install-package -package cascadia-code-nerd-font
 install-package -package git
 install-package -package microsoft-windows-terminal
 install-package -package vscode

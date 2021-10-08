@@ -68,7 +68,7 @@
                     "face": "CaskaydiaCove Nerd Font Mono"
                 },
                 "guid": "{c946530e-e875-4da8-bbec-54ee79132429}",
-                "icon": "C:\\Users\\ben.waterhouse\\Downloads\\powershell.ico",
+                "icon": "%LOCALAPPDATA%\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\powershell.ico",
                 "name": "Powershell (Admin)",
                 "useAcrylic": false
             },
