@@ -27,11 +27,11 @@ Install-Module posh-git
 Install-Module oh-my-posh
 
 # Install profiles
-Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/bwhouse/windows-init/master/Microsoft.PowerShell_profile.ps1' -OutFile $PROFILE
-Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/bwhouse/windows-init/master/settings.json' -OutFile $env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
+Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/bwhouse/windows-init/main/Microsoft.PowerShell_profile.ps1' -OutFile $PROFILE
+Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/bwhouse/windows-init/main/settings.json' -OutFile $env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
 
 # Install console background
-Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/bwhouse/windows-init/master/console_wallpaper.png' -OutFile $env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\console_wallpaper.png
+Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/bwhouse/windows-init/main/console_wallpaper.png' -OutFile $env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\console_wallpaper.png
 
 # set GIT_SSH user environment varible
 $SSHPath = (Get-Command -Name 'ssh.exe').Source
