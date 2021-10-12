@@ -22,12 +22,18 @@ install-package -package git
 install-package -package microsoft-windows-terminal
 install-package -package vscode
 install-package -package iperf3
+install-package -package powertoys
+
 
 Install-Module posh-git
 Install-Module oh-my-posh
 
 # Install modified omp theme
 Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/bwhouse/windows-init/main/.craver_mod.omp.json' -OutFile $env:USERPROFILE\.craver_mod.omp.json
+
+# Install red PS icon for admin session
+Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/bwhouse/windows-init/main/powershell.ico' -OutFile $env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\powershell.ico
+
 
 # Install profiles
 Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/bwhouse/windows-init/main/Microsoft.PowerShell_profile.ps1' -OutFile $PROFILE
