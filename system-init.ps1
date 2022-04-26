@@ -23,6 +23,7 @@ install-package -package microsoft-windows-terminal
 install-package -package vscode
 install-package -package iperf3
 install-package -package powertoys
+install-package -package tailscale
 
 
 Install-Module posh-git
